@@ -17,11 +17,21 @@ const StyledNav = styled.nav`
 		display: flex;
 		align-items: center;
 	}
+
+	ul > * {
+		padding-top: 0.2rem;
+		padding-bottom: 0.2rem;
+	}
 	.left-links {
 		margin-right: auto;
 	}
 	.right-links {
 		margin-left: auto;
+	}
+
+	.left-links a:hover,
+	.right-links a:hover {
+		text-decoration: underline;
 	}
 	.logo {
 		font-style: italic;
@@ -33,7 +43,7 @@ const StyledNav = styled.nav`
 
 	ul .list-item {
 		display: flex;
-		font-size: 2.5vw;
+		font-size: 1rem;
 		margin: 1rem;
 	}
 `;
