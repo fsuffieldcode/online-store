@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const BannerContainer = styled.div`
+	max-width: 100%;
 	background-color: #aef359;
 	height: 20px;
 	font-size: 0.6rem;
