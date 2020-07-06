@@ -4,27 +4,28 @@ import ProductList from './ProductList';
 
 const dresses = ProductList[0].image;
 const tops = ProductList[3].image;
-const shoes = ProductList[7].image;
-const mens = ProductList[8].image;
-
-console.log(dresses);
+const shoes = ProductList[5].image;
+const mens = ProductList[7].image;
 
 const TileWrapper = styled.div`
-	margin-left: auto;
-	margin-right: auto;
+	width: 100%;
 	max-width: 1000px;
-	background-color: lightgrey;
 	height: 300px;
 	margin: 3rem 0;
 	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	grid-auto-flow: row;
+	margin-left: auto;
+	margin-right: auto;
 `;
 
 const Tile = styled.div`
-	width: 300px;
+	width: 400px;
 	height: 300px;
 	background-size: cover;
 	background-position: center;
 	background-image: ${(props) => `url('${props.imgUrl}')`};
+	margin: 3rem;
 `;
 
 export default function Tiles() {
