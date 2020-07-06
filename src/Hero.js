@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const HeroContainer = styled.div`
 	height: 700px;
 	max-height: calc(100vh - 105px);
-	/* (height minus navbars ^ ) */
+	/* (height minus navbar and banner ^ ) */
 	max-width: 1000px;
 	margin-left: auto;
 	margin-right: auto;

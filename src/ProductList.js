@@ -1,4 +1,4 @@
-ProductList = [
+const ProductList = [
 	{
 		id: 1,
 		name: 'Pink Dress',
@@ -73,15 +73,6 @@ ProductList = [
 	},
 	{
 		id: 9,
-		name: 'Denim Jacket',
-		color: 'blue',
-		gender: 'mens',
-		type: 'jacket',
-		price: 120,
-		image: 'https://images.unsplash.com/photo-1516257984-b1b4d707412e',
-	},
-	{
-		id: 10,
 		name: 'Brown Shoes',
 		color: 'brown',
 		gender: 'mens',
@@ -90,3 +81,5 @@ ProductList = [
 		image: 'https://images.unsplash.com/photo-1512675828443-4f454c42253a',
 	},
 ];
+
+export default ProductList;
