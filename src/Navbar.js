@@ -4,10 +4,14 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const StyledNav = styled.nav`
-	height: 50px;
+	height: 75px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	width: 1000px;
+	max-width: 100vw;
+	margin-left: auto;
+	margin-right: auto;
 
 	ul {
 		margin: 0;
@@ -35,7 +39,7 @@ const StyledNav = styled.nav`
 	}
 	.logo {
 		font-style: italic;
-		font-size: 4vw;
+		font-size: 2rem;
 		letter-spacing: 0.3rem;
 		display: flex;
 		justify-content: center;
@@ -46,6 +50,14 @@ const StyledNav = styled.nav`
 		font-size: 1rem;
 		margin: 1rem;
 	}
+
+	@media (max-width: 400px) {
+		height: 50px;
+		.left-links,
+		.right-links {
+			display: none;
+		}
+	}
 `;
 
 export default class Navbar extends Component {
@@ -53,6 +65,7 @@ export default class Navbar extends Component {
 		return (
 			<Router>
 				<StyledNav>
+					{}
 					<ul className='left-links'>
 						<li className='list-item'>
 							<Link to='/'>Men</Link>
@@ -66,10 +79,14 @@ export default class Navbar extends Component {
 					</div>
 					<ul className='right-links'>
 						<li className='list-item'>
-							<Link to='/'>Search</Link>
+							<Link to='/'>
+								<i class='fas fa-search'></i>Search
+							</Link>
 						</li>
 						<li className='list-item'>
-							<Link to='/'>Cart</Link>
+							<Link to='/'>
+								<i class='fas fa-shopping-cart'></i>Cart
+							</Link>
 						</li>
 					</ul>
 				</StyledNav>

@@ -2,10 +2,18 @@ import React from 'react';
 import styled from 'styled-components';
 
 const HeroContainer = styled.div`
-	height: calc(100vh - 70px);
-	img {
-		max-width: 100%;
-	}
+	height: 700px;
+	max-height: calc(100vh - 105px);
+	/* (height minus navbars ^ ) */
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+	background-size: cover;
+	background-position: top;
+	background-image: url('https://images.unsplash.com/photo-1552160753-117159821e01');
 `;
 
 const StyledButton = styled.a`
@@ -14,8 +22,8 @@ const StyledButton = styled.a`
 	color: white;
 	background-color: black;
 	border: 1px solid white;
-	top: 40%;
-	left: 10%;
+	bottom: 20%;
+	right: 22%;
 	padding: 0.5rem;
 	font-size: 1.2rem;
 	&:hover {
@@ -29,7 +37,6 @@ export default function Hero() {
 	return (
 		<HeroContainer>
 			<StyledButton href='/'>SHOP WOMEN'S</StyledButton>
-			<img src='https://images.unsplash.com/photo-1482270406631-a02c51d93c2f' />
 		</HeroContainer>
 	);
 }
