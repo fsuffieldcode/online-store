@@ -11,7 +11,7 @@ const TileWrapper = styled.div`
 	width: 100%;
 	max-width: 1000px;
 	height: 300px;
-	margin: 3rem 0;
+	margin: 1.2rem 0;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 	grid-auto-flow: row;
@@ -39,7 +39,7 @@ const StyledButton = styled.a`
 	background-color: black;
 	border: 1px solid white;
 	padding: 0.5rem;
-	margin: 0 1rem 1rem 0;
+	margin: 0 0.75rem 0.75rem 0;
 	font-size: 1.2rem;
 	text-align: center;
 	&:hover {

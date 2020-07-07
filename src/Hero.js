@@ -15,10 +15,6 @@ const HeroContainer = styled.div`
 	background-size: cover;
 	background-position: top;
 	background-image: url('https://images.unsplash.com/photo-1552160753-117159821e01');
-
-	img {
-		justify-self: center;
-	}
 `;
 
 const StyledButton = styled.a`
@@ -27,7 +23,7 @@ const StyledButton = styled.a`
 	background-color: black;
 	border: 1px solid white;
 	margin: 0 6rem 6rem 0;
-	padding: 0.5rem;
+	padding: 1rem;
 	font-size: 1.2rem;
 	&:hover {
 		color: black;
