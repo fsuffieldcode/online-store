@@ -11,21 +11,22 @@ const TileWrapper = styled.div`
 	width: 100%;
 	max-width: 1000px;
 	height: 300px;
-	margin: 1.2rem 0;
+	margin: 2rem 0;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	justify-items: center;
+	grid-gap: 2rem;
 	grid-auto-flow: row;
 	margin-left: auto;
 	margin-right: auto;
 `;
 
 const Tile = styled.div`
-	width: 400px;
-	height: 300px;
+	width: 312px;
+	min-height: 250px;
 	background-size: cover;
 	background-position: center;
 	background-image: ${(props) => `url('${props.category}')`};
-	margin: 3rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;

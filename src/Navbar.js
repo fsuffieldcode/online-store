@@ -6,6 +6,7 @@ import styled from 'styled-components';
 const StyledNav = styled.nav`
 	height: 75px;
 	display: flex;
+	justify-content: center;
 	align-items: center;
 	width: 1000px;
 	max-width: 100vw;
@@ -41,7 +42,6 @@ const StyledNav = styled.nav`
 		font-size: 2rem;
 		letter-spacing: 0.3rem;
 		display: flex;
-		justify-self: center;
 	}
 
 	ul .list-item {
