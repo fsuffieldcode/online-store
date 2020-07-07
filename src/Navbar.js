@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 import styled from 'styled-components';
 
@@ -64,13 +64,12 @@ export default class Navbar extends Component {
 		return (
 			<Router>
 				<StyledNav>
-					{}
 					<ul className='left-links'>
 						<li className='list-item'>
-							<Link to='/'>Men</Link>
+							<Link to='/shop/men'>Men</Link>
 						</li>
 						<li className='list-item'>
-							<Link to='/'>Women</Link>
+							<Link to='/shop/women'>Women</Link>
 						</li>
 					</ul>
 					<div className='logo'>
@@ -78,12 +77,12 @@ export default class Navbar extends Component {
 					</div>
 					<ul className='right-links'>
 						<li className='list-item'>
-							<Link to='/'>
+							<Link to='/search'>
 								<i class='fas fa-search'></i>Search
 							</Link>
 						</li>
 						<li className='list-item'>
-							<Link to='/'>
+							<Link to='/cart'>
 								<i class='fas fa-shopping-cart'></i>Cart
 							</Link>
 						</li>

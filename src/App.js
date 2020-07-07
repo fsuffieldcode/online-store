@@ -1,21 +1,14 @@
 import React from 'react';
+import { Route, Switch } from 'react-router-dom';
 import './App.css';
-import TopBanner from './TopBanner';
-import Navbar from './Navbar';
-import Hero from './Hero';
-import Tiles from './Tiles';
-import Footer from './Footer';
+import Home from './Home';
 
-function App() {
+export default function App() {
 	return (
 		<div className='App'>
-			<TopBanner />
-			<Navbar />
-			<Hero />
-			<Tiles />
-			<Footer />
+			<Switch>
+				<Route exact path='/' component={Home} />
+			</Switch>
 		</div>
 	);
 }
-
-export default App;
