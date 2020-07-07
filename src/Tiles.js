@@ -24,17 +24,46 @@ const Tile = styled.div`
 	height: 300px;
 	background-size: cover;
 	background-position: center;
-	background-image: ${(props) => `url('${props.imgUrl}')`};
+	background-image: ${(props) => `url('${props.category}')`};
 	margin: 3rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-end;
+`;
+
+const StyledButton = styled.a`
+	width: 100px;
+	z-index: 999;
+	color: white;
+	background-color: black;
+	border: 1px solid white;
+	padding: 0.5rem;
+	margin: 0 1rem 1rem 0;
+	font-size: 1.2rem;
+	text-align: center;
+	&:hover {
+		color: black;
+		background-color: white;
+		border: 1px solid black;
+	}
 `;
 
 export default function Tiles() {
 	return (
 		<TileWrapper>
-			<Tile imgUrl={dresses} />
-			<Tile imgUrl={tops} />
-			<Tile imgUrl={shoes} />
-			<Tile imgUrl={mens} />
+			<Tile category={dresses}>
+				<StyledButton category='dresses'>Dresses</StyledButton>
+			</Tile>
+			<Tile category={tops}>
+				<StyledButton category='dresses'>Tops</StyledButton>
+			</Tile>
+			<Tile category={shoes}>
+				<StyledButton category='dresses'>Shoes</StyledButton>
+			</Tile>
+			<Tile category={mens}>
+				<StyledButton category='dresses'>Mens</StyledButton>
+			</Tile>
 		</TileWrapper>
 	);
 }

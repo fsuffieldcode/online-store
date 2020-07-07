@@ -9,21 +9,24 @@ const HeroContainer = styled.div`
 	margin-left: auto;
 	margin-right: auto;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-end;
+	align-items: flex-end;
 	overflow: hidden;
 	background-size: cover;
 	background-position: top;
 	background-image: url('https://images.unsplash.com/photo-1552160753-117159821e01');
+
+	img {
+		justify-self: center;
+	}
 `;
 
 const StyledButton = styled.a`
-	position: absolute;
 	z-index: 999;
 	color: white;
 	background-color: black;
 	border: 1px solid white;
-	bottom: 20%;
-	right: 22%;
+	margin: 0 6rem 6rem 0;
 	padding: 0.5rem;
 	font-size: 1.2rem;
 	&:hover {
