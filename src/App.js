@@ -4,6 +4,7 @@ import TopBanner from './TopBanner';
 import Navbar from './Navbar';
 import Hero from './Hero';
 import Tiles from './Tiles';
+import Footer from './Footer';
 
 function App() {
 	return (
@@ -12,6 +13,7 @@ function App() {
 			<Navbar />
 			<Hero />
 			<Tiles />
+			<Footer />
 		</div>
 	);
 }
