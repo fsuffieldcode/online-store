@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import ProductList from './ProductList';
+import Products from './Products';
 
-const dresses = ProductList[0].image;
-const tops = ProductList[3].image;
-const shoes = ProductList[5].image;
-const mens = ProductList[7].image;
+const dresses = Products[0].image;
+const tops = Products[3].image;
+const shoes = Products[5].image;
+const mens = Products[7].image;
 
 const TileWrapper = styled.div`
 	width: 100%;
