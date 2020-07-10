@@ -1,7 +1,7 @@
 const Inventory = [
 	{
 		id: 1,
-		name: 'Pink Dress',
+		name: 'Fae Dress in Pink Print',
 		color: 'pink',
 		gender: 'womens',
 		type: 'dress',
@@ -10,7 +10,7 @@ const Inventory = [
 	},
 	{
 		id: 2,
-		name: 'Red Dress',
+		name: 'Slam Dress in Satin Red',
 		color: 'red',
 		gender: 'womens',
 		type: 'dress',
@@ -19,7 +19,7 @@ const Inventory = [
 	},
 	{
 		id: 3,
-		name: 'Black Dress',
+		name: 'Corsola Dress in Black',
 		color: 'black',
 		gender: 'womens',
 		type: 'dress',
@@ -28,7 +28,7 @@ const Inventory = [
 	},
 	{
 		id: 4,
-		name: 'Yellow Top',
+		name: 'Girlfriend Long Sleeve in Banana',
 		color: 'yellow',
 		gender: 'womens',
 		type: 'top',
@@ -37,7 +37,7 @@ const Inventory = [
 	},
 	{
 		id: 5,
-		name: 'White Top',
+		name: 'Angel Smock in White',
 		color: 'white',
 		gender: 'womens',
 		type: 'top',
@@ -46,7 +46,7 @@ const Inventory = [
 	},
 	{
 		id: 6,
-		name: 'Pink Shoes',
+		name: 'Lola Shoe in Pink Foil',
 		color: 'pink',
 		gender: 'womens',
 		type: 'shoe',
@@ -55,7 +55,7 @@ const Inventory = [
 	},
 	{
 		id: 7,
-		name: 'Gold Shoes',
+		name: 'Geo Heel in Gold',
 		color: 'gold',
 		gender: 'womens',
 		type: 'shoe',
@@ -64,7 +64,7 @@ const Inventory = [
 	},
 	{
 		id: 8,
-		name: 'Denim Jacket',
+		name: 'Industria Denim Shirt in Blue',
 		color: 'blue',
 		gender: 'mens',
 		type: 'jacket',
@@ -73,7 +73,7 @@ const Inventory = [
 	},
 	{
 		id: 9,
-		name: 'Brown Shoes',
+		name: 'Saw Shoes in Brown',
 		color: 'brown',
 		gender: 'mens',
 		type: 'shoe',

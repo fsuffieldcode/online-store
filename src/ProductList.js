@@ -9,7 +9,6 @@ const ProductListWrapper = styled.div`
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	justify-items: center;
-	grid-gap: 0.5rem;
 	grid-auto-flow: row;
 	margin-left: auto;
 	margin-right: auto;
@@ -32,7 +31,12 @@ const ProductTile = styled.div`
 `;
 
 const ProductDescription = styled.div`
-	height: 100px;
+	padding-left: 0.25rem;
+	height: 75px;
+
+	h2 {
+		font-size: 1rem;
+	}
 `;
 
 export default class ProductList extends Component {
