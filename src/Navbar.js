@@ -77,7 +77,7 @@ export default class Navbar extends Component {
 				<ul className='right-links'>
 					<li className='list-item'>
 						<Link to='/search'>
-							<i class='fas fa-search'></i>Search
+							<i className='fas fa-search'></i>Search
 						</Link>
 					</li>
 					<li className='list-item'>

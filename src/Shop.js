@@ -1,6 +1,7 @@
 import React from 'react';
 import TopBanner from './TopBanner';
 import Navbar from './Navbar';
+import ProductList from './ProductList';
 import Footer from './Footer';
 
 export default function Store() {
@@ -8,6 +9,7 @@ export default function Store() {
 		<>
 			<TopBanner />
 			<Navbar />
+			<ProductList />
 			<Footer />
 		</>
 	);
