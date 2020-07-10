@@ -2,22 +2,26 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import Inventory from './Inventory';
 
-const ProductWrapper = styled.div`
+const ProductListWrapper = styled.div`
 	width: 100%;
 	max-width: 1000px;
 	margin: 2rem 0;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	justify-items: center;
-	grid-gap: 2rem;
+	grid-gap: 0.5rem;
 	grid-auto-flow: row;
 	margin-left: auto;
 	margin-right: auto;
 `;
 
+const ProductWrapper = styled.article`
+	margin: 0 0 2rem 0;
+`;
+
 const ProductTile = styled.div`
-	width: 400px;
-	min-height: 400px;
+	min-width: 300px;
+	height: 300px;
 	background-size: cover;
 	background-position: center;
 	background-image: ${(props) => `url('${props.image}')`};
@@ -27,6 +31,10 @@ const ProductTile = styled.div`
 	align-items: flex-end;
 `;
 
+const ProductDescription = styled.div`
+	height: 100px;
+`;
+
 export default class ProductList extends Component {
 	state = {
 		displayedProducts: Inventory,
@@ -34,16 +42,24 @@ export default class ProductList extends Component {
 
 	render() {
 		const products = this.state.displayedProducts;
-		console.log(products);
 		return (
 			<section>
-				<ProductWrapper>
+				<ProductListWrapper>
 					{products.map((product) => {
 						return (
-							<ProductTile key={product.id} image={product.image}></ProductTile>
+							<ProductWrapper>
+								<ProductTile
+									key={product.id}
+									image={product.image}
+								></ProductTile>
+								<ProductDescription>
+									<h2>{product.name}</h2>
+									<p>£{product.price}.00</p>
+								</ProductDescription>
+							</ProductWrapper>
 						);
 					})}
-				</ProductWrapper>
+				</ProductListWrapper>
 			</section>
 		);
 	}
