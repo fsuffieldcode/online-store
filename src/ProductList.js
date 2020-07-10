@@ -7,7 +7,7 @@ const ProductWrapper = styled.div`
 	max-width: 1000px;
 	margin: 2rem 0;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 	justify-items: center;
 	grid-gap: 2rem;
 	grid-auto-flow: row;
@@ -16,8 +16,8 @@ const ProductWrapper = styled.div`
 `;
 
 const ProductTile = styled.div`
-	width: 312px;
-	min-height: 250px;
+	width: 400px;
+	min-height: 400px;
 	background-size: cover;
 	background-position: center;
 	background-image: ${(props) => `url('${props.image}')`};
