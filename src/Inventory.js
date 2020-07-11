@@ -67,7 +67,7 @@ const Inventory = [
 		name: 'Industria Denim Shirt in Blue',
 		color: 'blue',
 		gender: 'mens',
-		type: 'jacket',
+		type: 'top',
 		price: 120,
 		image: 'https://images.unsplash.com/photo-1516257984-b1b4d707412e',
 	},

@@ -50,13 +50,13 @@ const StyledNav = styled.nav`
 		margin: 1rem;
 	}
 
-	@media (max-width: 400px) {
+	/* @media (max-width: 400px) {
 		height: 50px;
 		.left-links,
 		.right-links {
 			display: none;
 		}
-	}
+	} */
 `;
 
 export default class Navbar extends Component {
@@ -65,21 +65,13 @@ export default class Navbar extends Component {
 			<StyledNav>
 				<ul className='left-links'>
 					<li className='list-item'>
-						<Link to='/shop/men'>Men</Link>
-					</li>
-					<li className='list-item'>
-						<Link to='/shop/women'>Women</Link>
+						<Link to='/shop'>Shop</Link>
 					</li>
 				</ul>
 				<div className='logo'>
 					<Link to='/'>POISSON</Link>
 				</div>
 				<ul className='right-links'>
-					<li className='list-item'>
-						<Link to='/search'>
-							<i className='fas fa-search'></i>Search
-						</Link>
-					</li>
 					<li className='list-item'>
 						<Link to='/cart'>
 							<i class='fas fa-shopping-cart'></i>Cart
