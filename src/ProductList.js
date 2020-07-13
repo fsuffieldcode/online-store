@@ -39,15 +39,40 @@ const ProductDescription = styled.div`
 	}
 `;
 
+const DressButton = styled.div`
+	width: 80px;
+	height: 100px;
+	background-color: black;
+	color: white;
+`;
+
 export default class ProductList extends Component {
 	state = {
 		displayedProducts: Inventory,
+	};
+
+	handleFilter = (filter) => {
+		const visibleProducts = this.state.displayedProducts;
+		const newVisibleProducts = visibleProducts.filter(
+			(item) => item.type === filter
+		);
+		this.setState({
+			displayedProducts: newVisibleProducts,
+		});
+
+		console.log(this.state.displayedProducts);
 	};
 
 	render() {
 		const products = this.state.displayedProducts;
 		return (
 			<section>
+				<DressButton
+					className='dressbutton'
+					onClick={() => this.handleFilter('dress')}
+				>
+					DRESSES
+				</DressButton>
 				<ProductListWrapper>
 					{products.map((product) => {
 						return (
