@@ -1,13 +1,13 @@
-const initialState = {
-	category: null,
+const filtersReducerDefaultState = {
+	category: '',
 };
 
-export default (state = initialState, action) => {
+export default (state = filtersReducerDefaultState, action) => {
 	switch (action.type) {
 		case 'SET_CATEGORY_FILTER':
 			return {
 				...state,
-				category: action.type,
+				category: action.category,
 			};
 		default:
 			return state;
