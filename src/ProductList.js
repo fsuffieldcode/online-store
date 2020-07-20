@@ -39,7 +39,7 @@ const ProductDescription = styled.div`
 	}
 `;
 
-const DressButton = styled.div`
+const CategoryButton = styled.div`
 	width: 80px;
 	height: 100px;
 	background-color: black;
@@ -51,28 +51,28 @@ export default class ProductList extends Component {
 		displayedProducts: Inventory,
 	};
 
-	handleFilter = (filter) => {
-		const visibleProducts = this.state.displayedProducts;
-		const newVisibleProducts = visibleProducts.filter(
-			(item) => item.type === filter
-		);
-		this.setState({
-			displayedProducts: newVisibleProducts,
-		});
+	// handleFilter = (filter) => {
+	// 	const visibleProducts = this.state.displayedProducts;
+	// 	const newVisibleProducts = visibleProducts.filter(
+	// 		(item) => item.type === filter
+	// 	);
+	// 	this.setState({
+	// 		displayedProducts: Inventory,
+	// 	});
+	// 	this.setState({
+	// 		displayedProducts: newVisibleProducts,
+	// 	});
 
-		console.log(this.state.displayedProducts);
-	};
+	// 	console.log(this.state.displayedProducts);
+	// };
 
 	render() {
 		const products = this.state.displayedProducts;
 		return (
 			<section>
-				<DressButton
-					className='dressbutton'
-					onClick={() => this.handleFilter('dress')}
-				>
+				{/* <CategoryButton onClick={() => this.handleFilter('dress')}>
 					DRESSES
-				</DressButton>
+				</CategoryButton> */}
 				<ProductListWrapper>
 					{products.map((product) => {
 						return (
