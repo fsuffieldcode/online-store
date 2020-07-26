@@ -8,7 +8,7 @@ const StyledNav = styled.nav`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 1000px;
+	width: 1200px;
 	max-width: 100vw;
 	margin-left: auto;
 	margin-right: auto;
@@ -40,6 +40,7 @@ const StyledNav = styled.nav`
 	.logo {
 		font-style: italic;
 		font-size: 2rem;
+		font-weight: 900;
 		letter-spacing: 0.3rem;
 		display: flex;
 	}

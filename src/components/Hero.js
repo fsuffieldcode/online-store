@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 const HeroContainer = styled.div`
-	max-width: 1000px;
-	height: 700px;
+	max-width: 1200px;
+	height: 600px;
 	max-height: calc(100vh - 105px);
 	/* (height minus navbar and banner ^ ) */
 	margin-left: auto;

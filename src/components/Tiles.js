@@ -9,7 +9,7 @@ const mens = Inventory[7].image;
 
 const TileWrapper = styled.div`
 	width: 100%;
-	max-width: 1000px;
+	max-width: 1200px;
 	margin: 2rem 0;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

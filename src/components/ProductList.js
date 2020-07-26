@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import Inventory from './Inventory';
+import setCategoryFilter from '../actions/filters';
+import { connect } from 'react-redux';
 
 const ProductListWrapper = styled.div`
 	width: 100%;
-	max-width: 1000px;
+	max-width: 1200px;
 	margin: 2rem 0;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -46,7 +48,22 @@ const CategoryButton = styled.div`
 	color: white;
 `;
 
-export default class ProductList extends Component {
+const mapStateToProps = (state) => {
+	return {
+		filters: state.filters,
+	};
+};
+
+const mapDispatchToProps = (dispatch) => {
+	return {
+		setCategoryFilter: () =>
+			dispatch({
+				type: 'SET_CATEGORY_FILTER',
+			}),
+	};
+};
+
+export class ProductList extends Component {
 	state = {
 		displayedProducts: Inventory,
 	};
@@ -67,12 +84,13 @@ export default class ProductList extends Component {
 	// };
 
 	render() {
+		console.log(this.props.filters);
 		const products = this.state.displayedProducts;
 		return (
 			<section>
-				{/* <CategoryButton onClick={() => this.handleFilter('dress')}>
-					DRESSES
-				</CategoryButton> */}
+				<button onClick={() => this.props.setCategoryFilter('dress')}>
+					Dresses
+				</button>
 				<ProductListWrapper>
 					{products.map((product) => {
 						return (
@@ -93,3 +111,5 @@ export default class ProductList extends Component {
 		);
 	}
 }
+
+export default connect(mapStateToProps, mapDispatchToProps)(ProductList);

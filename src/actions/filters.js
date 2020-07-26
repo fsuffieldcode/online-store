@@ -1,4 +1,4 @@
-export const setCategoryFilter = (category) => ({
+export default (category) => ({
 	type: 'SET_CATEGORY_FILTER',
-	category,
+	payload: category,
 });

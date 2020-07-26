@@ -4,7 +4,7 @@ import Navbar from './Navbar';
 import ProductList from './ProductList';
 import Footer from './Footer';
 
-export default function Store() {
+export default function Shop() {
 	return (
 		<>
 			<TopBanner />

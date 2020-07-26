@@ -1,11 +1,13 @@
 import { createStore, combineReducers } from 'redux';
 import filtersReducer from '../reducers/filters';
 
-export default () => {
-	const store = createStore(
+function configureStore(state = { category: '' }) {
+	return createStore(
 		combineReducers({
 			filters: filtersReducer,
-		})
+		}),
+		state
 	);
-	return store;
-};
+}
+
+export default configureStore;

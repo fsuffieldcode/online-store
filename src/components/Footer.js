@@ -34,27 +34,35 @@ const StyledFooter = styled.footer`
 	}
 `;
 
+const FooterWrapper = styled.div`
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+`;
+
 export default function Footer() {
 	return (
 		<Router>
 			<StyledFooter>
-				<Link to=''>
-					<div className='logo'>POISSON</div>
-				</Link>
-				<ul>
-					<Link to='/'>
-						<li>SHIPPING & RETURNS</li>
+				<FooterWrapper>
+					<Link to=''>
+						<div className='logo'>POISSON</div>
 					</Link>
-					<Link to='/'>
-						<li>PRIVACY POLICY</li>
-					</Link>
-					<Link to='/'>
-						<li>CAREERS</li>
-					</Link>
-					<Link to='/'>
-						<li>BLOG</li>
-					</Link>
-				</ul>
+					<ul>
+						<Link to='/'>
+							<li>SHIPPING & RETURNS</li>
+						</Link>
+						<Link to='/'>
+							<li>PRIVACY POLICY</li>
+						</Link>
+						<Link to='/'>
+							<li>CAREERS</li>
+						</Link>
+						<Link to='/'>
+							<li>BLOG</li>
+						</Link>
+					</ul>
+				</FooterWrapper>
 			</StyledFooter>
 		</Router>
 	);

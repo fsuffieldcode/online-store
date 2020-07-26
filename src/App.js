@@ -4,7 +4,7 @@ import './App.css';
 import Home from './components/Home';
 import Shop from './components/Shop';
 
-export default function App() {
+function App() {
 	return (
 		<div className='App'>
 			<Router>
@@ -16,3 +16,5 @@ export default function App() {
 		</div>
 	);
 }
+
+export default App;
